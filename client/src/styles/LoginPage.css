@@ -1,0 +1,102 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f0fa, #e6d6f5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.login-page h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6b4c9a;
+  text-shadow: 0 2px 4px rgba(107, 76, 154, 0.1);
+}
+
+.login-page form {
+  background: rgba(245, 240, 250, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(107, 76, 154, 0.15);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(200, 162, 200, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.login-page input {
+  padding: 15px;
+  border: 2px solid rgba(200, 162, 200, 0.3);
+  border-radius: 12px;
+  background: rgba(245, 240, 250, 0.8);
+  font-size: 1rem;
+  color: #4b0082;
+  transition: all 0.3s ease;
+}
+
+.login-page input:focus {
+  outline: none;
+  border-color: #b497bd;
+  box-shadow: 0 0 0 3px rgba(180, 151, 189, 0.2);
+  transform: translateY(-1px);
+}
+
+.login-page button {
+  padding: 15px;
+  background: linear-gradient(45deg, #b497bd, #c8a2c8);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(180, 151, 189, 0.3);
+}
+
+.login-page button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(180, 151, 189, 0.4);
+}
+
+.login-page p {
+  margin: 0;
+  color: #d32f2f;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.login-extra-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.login-link-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #b497bd, #c8a2c8);
+  color: white;
+  font-weight: 600;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(180, 151, 189, 0.3);
+  transition: all 0.3s ease;
+}
+
+.login-link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(180, 151, 189, 0.4);
+}

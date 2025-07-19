@@ -1,0 +1,109 @@
+/* Lavender Professional Theme */
+
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f5f0ff, #e6e0f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(138, 43, 226, 0.15);
+  width: 100%;
+  max-width: 420px;
+  animation: slideUp 0.7s ease-out;
+}
+
+.register-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #6a5acd;
+  font-weight: 700;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-input {
+  padding: 14px 16px;
+  border: 2px solid #dcd3f5;
+  border-radius: 10px;
+  background-color: #faf8ff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #4b0082;
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #b497e7;
+  box-shadow: 0 0 0 3px rgba(186, 146, 255, 0.2);
+}
+
+.register-button {
+  padding: 14px;
+  background: linear-gradient(45deg, #b497e7, #9370db);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(138, 43, 226, 0.3);
+}
+
+.register-error {
+  color: #c0392b;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+
+  .register-button {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,81 @@
+.navbar {
+    position: fixed;
+    /* Makes it stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    /* Stay above other content */
+    background: linear-gradient(135deg, #f5f0fa 0%, #e6d6f5 50%, #f5f0fa 100%);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 1rem;
+}
+
+.navbar-left a,
+.navbar-right a {
+    color: #5a4636;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+
+.navbar-left {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #5a4636;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-text {
+    font-family: 'Georgia', serif;
+}
+
+.navbar-right button {
+    background-color: #d2b48c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-right button:hover {
+    background-color: #c19a6b;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .navbar-left {
+        font-size: 1.1rem;
+    }
+
+    .navbar-right button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
